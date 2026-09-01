@@ -30,3 +30,5 @@
 .wp-steps .wp-icon{font-size:40px;}.scenario-grid .wp-icon{font-size:40px;}.opt-icon--lg{font-size:44px;}.opt-icon--poster{font-size:56px;}
 
 .micro-labels span,.scenario{display:inline-flex;align-items:center;gap:.45rem}.micro-labels .icon,.scenario .icon,.logic-diagram .icon{width:20px;height:20px;font-size:20px}.scenario:before{display:none}.logic-diagram span{display:inline-flex;align-items:center;gap:.45rem}
+
+.error-page{background:var(--cream);min-height:100vh}.error-page main{min-height:calc(100vh - 82px);padding:clamp(4rem,10vw,10rem) clamp(1rem,7vw,7rem);text-align:left}.error-page main>p:not(.eyebrow){max-width:34rem;font-size:1.2rem}.error-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}.error-page .primary-nav{display:flex}@media(max-width:850px){.error-page .primary-nav{display:none}.error-page main{min-height:calc(100vh - 72px)}}

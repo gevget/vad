@@ -59,3 +59,5 @@
 .icon--lg{width:44px;height:44px;font-size:44px;}
 
 .tag-row span,.storage-diagram span{display:inline-flex;align-items:center;gap:.4rem}.tag-row .icon,.storage-diagram .icon{width:20px;height:20px;font-size:20px}.video-grid figcaption{display:none}
+
+@media(max-width:850px){.product-hero-visual,.difference,.compare,.use-cases,.conditions,.storage,.safety,.specs,.faq,.product-final{max-width:100%;overflow-x:hidden}.media-slot,.difference-media{width:100%;max-width:100%;margin-inline:0}.media-slot img,.difference-media img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain}}
