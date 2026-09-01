@@ -28,3 +28,11 @@
 
 .page--working-paste .wp-product-notes{border-top:1px solid currentColor;margin-top:28px;padding-top:20px}.page--working-paste .wp-product-notes h3{font-size:1.1rem;color:var(--yellow);margin:18px 0 6px}.page--working-paste .wp-product-notes p,.page--working-paste .wp-product-notes li{font-size:1rem;line-height:1.5}.page--working-paste .wp-product-notes ul{padding-left:1.2rem;margin:0}
 .page--working-paste .wp-grid>*{min-width:0;max-width:100%}.page--working-paste .wp-media{max-width:100%}.page--working-paste .wp-media img{max-width:100%;min-width:0}@media(max-width:767px){.page--working-paste .wp-heading__title,.page--working-paste .hero h1,.page--working-paste .result-bottom h3,.page--working-paste .final-copy h2{overflow-wrap:anywhere;word-break:normal;max-width:100%}.page--working-paste .wp-grid{width:100%;max-width:100%}}
+/* Phosphor Bold icon system */
+.ph-bold{font-family:"Phosphor-Bold";font-style:normal;font-weight:normal;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none;}
+.icon{width:24px;height:24px;font-size:24px;}
+.icon--sm{width:20px;height:20px;font-size:20px;}
+.icon--md{width:28px;height:28px;font-size:28px;}
+.icon--lg{width:44px;height:44px;font-size:44px;}
+
+.tags span{display:inline-flex;align-items:center;gap:.7rem}.tags span .icon{margin-right:.15rem}.application-section>.wp-container>.wp-grid>.wp-note{white-space:nowrap}@media(max-width:520px){.application-section>.wp-container>.wp-grid>.wp-note{white-space:normal}}

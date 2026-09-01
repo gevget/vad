@@ -4,3 +4,11 @@
 @media(max-width:374px){.page--opt .opt-container{width:calc(100% - 24px)}.page--opt .opt-hero__title,.page--opt .opt-heading__title{font-size:2.75rem}.page--opt .button{width:100%;text-align:center}.page--opt .offer,.page--opt .wholesale-form{padding:18px}.page--opt .business-grid article{padding:20px}.page--opt .opt-product-pair{grid-template-columns:1fr 20px 1fr}.page--opt .opt-product-pair>b{font-size:2rem}.page--opt .opt-product-pair>span{right:0;top:-20px}}
 @media(prefers-reduced-motion:reduce){.page--opt .faq-list .opt-icon{transition:none}}
 .page--opt .opt-grid>*{min-width:0;max-width:100%}@media(max-width:767px){.page--opt .opt-heading__title,.page--opt .opt-hero__title,.page--opt .opt-final__copy h2{overflow-wrap:anywhere;word-break:normal;max-width:100%}.page--opt .opt-hero__copy,.page--opt .opt-final__copy{min-width:0;max-width:100%}}
+/* Phosphor Bold icon system */
+.ph-bold{font-family:"Phosphor-Bold";font-style:normal;font-weight:normal;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex:none;}
+.icon{width:24px;height:24px;font-size:24px;}
+.icon--sm{width:20px;height:20px;font-size:20px;}
+.icon--md{width:28px;height:28px;font-size:28px;}
+.icon--lg{width:44px;height:44px;font-size:44px;}
+
+.page--opt .opt-tags span{display:inline-flex;align-items:center;gap:.5rem}.page--opt .opt-tags .opt-icon{width:20px;height:20px;font-size:20px}.page--opt .supply-flow .opt-icon{width:52px;height:52px;font-size:52px}.page--opt .steps-line .opt-icon{width:32px;height:32px;font-size:32px}.page--opt .support-list li{display:flex;align-items:center;gap:12px}.page--opt .support-list li:before{display:none}.page--opt .support-list .opt-icon{width:24px;height:24px;font-size:24px;color:var(--color-yellow);flex:none}
