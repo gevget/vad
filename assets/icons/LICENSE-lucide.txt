@@ -1,0 +1,1 @@
+This project uses locally stored SVG icons inspired by the Lucide icon style. Lucide is licensed under the ISC License. See https://lucide.dev/license for the complete license text.
