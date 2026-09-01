@@ -46,3 +46,5 @@
 .faq>.media-slot{padding:0;overflow:visible;background:transparent;border:0;height:auto;min-height:0}.faq>.media-slot img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
 
 .product-final>.media-slot{padding:10px;overflow:hidden;background:transparent;border:4px solid var(--yellow)}.product-final>.media-slot img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+
+@media(max-width:850px){.difference>.media-slot,.compare>.media-slot,.safety>.media-slot,.storage-diagram>.media-slot,.faq>.media-slot,.product-final>.media-slot{height:auto;min-height:0;overflow:visible}.difference>.media-slot img,.compare>.media-slot img,.safety>.media-slot img,.storage-diagram>.media-slot img,.faq>.media-slot img,.product-final>.media-slot img{width:100%;height:auto;max-height:none;object-fit:contain}}

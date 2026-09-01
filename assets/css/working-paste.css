@@ -5,3 +5,23 @@
 .dirt-grid{border-top:1px solid currentColor;border-left:1px solid currentColor}.dirt-grid article{margin:0;border:0;border-right:1px solid currentColor;border-bottom:1px solid currentColor}
 .page--working-paste .hero{height:auto;min-height:0;max-height:none;padding-block:20px 40px;overflow:visible}.page--working-paste .hero .breadcrumbs{margin-bottom:24px}.page--working-paste .hero .wp-grid{min-height:0}.page--working-paste .hero-photo{height:min(680px,calc(100svh - 164px));max-height:680px}.page--working-paste .hero-photo img{height:100%}
 @media(max-width:767px){.page--working-paste .hero{padding-block:40px 64px}.page--working-paste .hero-photo{height:auto;max-height:none}.page--working-paste .hero-photo img{height:auto}}
+
+.page--working-paste .hero-photo{border:2px dashed var(--red);padding:12px}
+.page--working-paste .hero-photo img{display:block;width:100%;height:auto;object-fit:contain}
+
+.page--working-paste .wp-media{padding:0;overflow:hidden}.page--working-paste .wp-media img{display:block;width:100%;height:auto;object-fit:contain}
+
+@media(min-width:1200px){.application-section>.wp-container>.wp-grid>.wp-media{grid-column:7/13}}
+
+@media(min-width:1200px){.application-section>.wp-container>.wp-grid>.wp-media{grid-column:7/13;align-self:start;margin-top:0}}
+.kilo-section .photo{height:auto;max-height:none;overflow:hidden;padding:10px;border:2px dashed var(--yellow);background:transparent}.kilo-section .photo img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+
+.page--working-paste .result-media{padding:0;overflow:hidden}.page--working-paste .result-media img{display:block;width:100%;height:auto;object-fit:contain}
+
+.page--working-paste .final-photo{height:auto;max-height:none;overflow:visible}.page--working-paste .final-photo img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+
+.page--working-paste .specs-media{padding:0;overflow:hidden}.page--working-paste .specs-media img{display:block;width:100%;height:auto;object-fit:contain}.page--working-paste .final-photo img{width:70%;margin-left:auto}
+
+.page--working-paste .final{position:relative;overflow:hidden}.page--working-paste .final:before,.page--working-paste .final:after{content:'';position:absolute;left:-20%;width:140%;height:32%;border-top:3px solid var(--black);border-bottom:3px solid var(--black);opacity:.48;transform:rotate(-18deg);pointer-events:none}.page--working-paste .final:before{top:8%}.page--working-paste .final:after{bottom:10%;transform:rotate(14deg)}.page--working-paste .final>.wp-container{position:relative;z-index:1}
+
+.page--working-paste .before-after .wp-media{height:auto;aspect-ratio:auto;overflow:hidden;padding:10px;border:2px dashed var(--yellow);background:transparent}.page--working-paste .before-after .wp-media img{display:block;width:100%;height:auto;object-fit:contain}.page--working-paste .before-after figcaption{margin-top:16px}
