@@ -1,0 +1,17 @@
+(() => {
+  'use strict';
+  // TODO FORM ENDPOINT: указать реальный endpoint перед публикацией
+  const WHOLESALE_FORM_ENDPOINT = "";
+  const form = document.querySelector('.wholesale-form');
+  if (!form) return;
+  const status = form.querySelector('.form-status');
+  const submit = form.querySelector('[type="submit"]');
+  const productInputs = [...form.querySelectorAll('input[name="product"]')];
+  const messages = {name:'Укажите имя.',company:'Укажите компанию.',region:'Укажите город или регион.',phone:'Укажите корректный телефон.',email:'Укажите корректный e-mail.',business:'Выберите формат бизнеса.',product:'Выберите интересующий товар.',consent:'Необходимо согласие на обработку персональных данных.'};
+  const clearErrors=()=>{form.querySelectorAll('.form-error').forEach(n=>n.remove());form.querySelectorAll('[aria-invalid="true"]').forEach(n=>{n.removeAttribute('aria-invalid');n.removeAttribute('aria-describedby')})};
+  const addError=(field,message,key)=>{const target=field.type==='radio'?field.closest('fieldset'):field.closest('label')||field;const error=document.createElement('span');const id=`form-error-${key}`;error.className='form-error';error.id=id;error.textContent=message;target.append(error);field.setAttribute('aria-invalid','true');field.setAttribute('aria-describedby',id)};
+  const validate=()=>{clearErrors();let first=null;['name','company','region','business'].forEach(name=>{const field=form.elements[name];if(!field.value.trim()){addError(field,messages[name],name);first||=field}});const phone=form.elements.phone;if(!/^[+()\d\s-]{7,}$/.test(phone.value.trim())){addError(phone,messages.phone,'phone');first||=phone}const email=form.elements.email;if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){addError(email,messages.email,'email');first||=email}const selected=productInputs.find(input=>input.checked);if(!selected){addError(productInputs[0],messages.product,'product');first||=productInputs[0]}const consent=form.elements.consent;if(!consent.checked){addError(consent,messages.consent,'consent');first||=consent}if(first)first.focus();return !first};
+  document.querySelectorAll('[data-select-product]').forEach(link=>link.addEventListener('click',()=>{const input=productInputs.find(item=>item.value===link.dataset.selectProduct);if(input)input.checked=true}));
+  document.querySelectorAll('.faq-list button').forEach(button=>button.addEventListener('click',()=>{const panel=document.getElementById(button.getAttribute('aria-controls'));const open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));panel.hidden=open}));
+  form.addEventListener('submit',async event=>{event.preventDefault();status.textContent='';if(!validate())return;if(form.elements.website.value)return;if(!WHOLESALE_FORM_ENDPOINT){status.textContent='Отправка формы пока не подключена.';status.focus();return}submit.disabled=true;submit.setAttribute('aria-busy','true');const original=submit.textContent;submit.textContent='Отправляем…';status.textContent='Отправляем заявку…';try{const response=await fetch(WHOLESALE_FORM_ENDPOINT,{method:'POST',body:new FormData(form)});status.textContent=response.ok?'Заявка отправлена. Мы свяжемся с вами в рабочее время.':'Не удалось отправить заявку. Проверьте соединение и попробуйте ещё раз.';if(response.ok)form.reset()}catch(_){status.textContent='Не удалось отправить заявку. Проверьте соединение и попробуйте ещё раз.'}finally{submit.disabled=false;submit.removeAttribute('aria-busy');submit.textContent=original;status.focus()}});
+})();
