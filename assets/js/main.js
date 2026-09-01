@@ -16,6 +16,6 @@
 
 (() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.storage-diagram>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-carry.webp" width="1408" height="1120" loading="lazy" alt="Розжигатор №1 в компактном наборе для поездки">'; })();
 
-(() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.faq>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-product-hero.png" width="972" height="1456" loading="lazy" alt="Розжигатор №1 на фоне огня и дыма">'; })();
+(() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.faq>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-product-hero.webp" width="972" height="1456" loading="lazy" alt="Розжигатор №1 на фоне огня и дыма">'; })();
 
 (() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.product-final>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-final.webp" width="1024" height="1536" loading="lazy" alt="Розжигатор №1 — финальный кадр с огнём">'; })();
