@@ -1,1 +1,1 @@
-{"name":"Продукты №1","short_name":"Продукты №1","lang":"ru","start_url":"/","display":"standalone","background_color":"#F0EDCA","theme_color":"#E0201A","icons":[{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml"}]}
+{"name":"Продукты №1","short_name":"Продукты №1","lang":"ru","start_url":".","display":"standalone","background_color":"#F0EDCA","theme_color":"#E0201A","icons":[{"src":"favicon.svg","sizes":"any","type":"image/svg+xml"}]}
