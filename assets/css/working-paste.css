@@ -38,3 +38,5 @@
 .tags span{display:inline-flex;align-items:center;gap:.7rem}.tags span .icon{margin-right:.15rem}.application-section>.wp-container>.wp-grid>.wp-note{white-space:nowrap}@media(max-width:520px){.application-section>.wp-container>.wp-grid>.wp-note{white-space:normal}}
 
 .page--working-paste .wp-media{margin-inline:0;max-width:100%;min-width:0}.page--working-paste .wp-media img{max-width:100%;min-width:0}
+
+@media(max-width:850px){.page--working-paste .primary-nav{background:#333122;color:#F0EDCA;border-bottom:2px solid #FDB601}.page--working-paste .primary-nav>a:not(.button),.page--working-paste .products-toggle{border-bottom:1px solid #FDB601;color:#F0EDCA}.page--working-paste .products-menu{background:#333122;color:#F0EDCA}.page--working-paste .primary-nav .button{background:#E0201A;color:#F0EDCA;border-color:#FDB601}}
