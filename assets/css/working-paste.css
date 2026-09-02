@@ -40,3 +40,9 @@
 .page--working-paste .wp-media{margin-inline:0;max-width:100%;min-width:0}.page--working-paste .wp-media img{max-width:100%;min-width:0}
 
 @media(max-width:850px){.page--working-paste .primary-nav{background:#333122;color:#F0EDCA;border-bottom:2px solid #FDB601}.page--working-paste .primary-nav>a:not(.button),.page--working-paste .products-toggle{border-bottom:1px solid #FDB601;color:#F0EDCA}.page--working-paste .products-menu{background:#333122;color:#F0EDCA}.page--working-paste .primary-nav .button{background:#E0201A;color:#F0EDCA;border-color:#FDB601}}
+
+/* Full-bleed responsive usage guide */
+.page--working-paste .usage-guide-section{width:100%;padding:0!important;margin:0;background:#333122;overflow:hidden;line-height:0}
+.page--working-paste .usage-guide-section picture{display:block;width:100%;margin:0}
+.page--working-paste .usage-guide-section img{display:block;width:100%;height:auto;max-width:none;margin:0}
+.page--working-paste .usage-guide-section .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
