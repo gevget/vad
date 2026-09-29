@@ -18,8 +18,9 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 clamp(20px, calc((100vw - 1320px) / 2), 60px);
+  padding: 8px clamp(20px, calc((100vw - 1320px) / 2), 60px);
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   scrollbar-color: var(--black) transparent;
   scrollbar-width: thin;
@@ -53,8 +54,7 @@
 }
 
 .product-gallery__item:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 4px 4px 0 var(--black);
+  border-color: var(--red);
 }
 
 .product-gallery__lightbox {
@@ -113,11 +113,6 @@
   .product-gallery--fire .product-gallery__track li,
   .product-gallery--paste .product-gallery__track li {
     flex-basis: min(74vw, 300px);
-  }
-
-  .product-gallery__item:hover {
-    transform: none;
-    box-shadow: 6px 6px 0 var(--black);
   }
 }
 
