@@ -10,7 +10,7 @@
 (() => { const d=document.querySelector('.difference'), items=document.querySelectorAll('.product-source-facts'); if(d&&items.length===2)d.before(items[0],items[1]); })();
 (() => { setTimeout(() => { const section=document.querySelector('.product-source-facts:not(.source-yellow)'); if(!section||section.querySelector('.source-origin-media'))return; const slot=document.createElement('figure');slot.className='source-origin-media';slot.innerHTML='<img src="assets/images/products/rozzhigator-made-in-russia.webp" width="1440" height="1080" loading="lazy" alt="Розжигатор №1 — сделано в России">'; const heading=section.querySelector('.section-intro'); heading?.before(slot); },30); })();
 
-(() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.compare>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-compare.webp" width="1280" height="1280" loading="lazy" alt="Сравнение жидкого розжига и пасты Розжигатор №1">'; })();
+(() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.compare>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-compare.webp" width="1254" height="1254" loading="lazy" alt="Сравнение жидкого розжига и точечного нанесения пасты Розжигатор №1">'; })();
 
 (() => { const page=document.querySelector('.product-hero'); if(!page)return; const slot=document.querySelector('.storage-diagram>.media-slot'); if(slot)slot.innerHTML='<img src="assets/images/products/rozzhigator-carry.webp" width="1408" height="1120" loading="lazy" alt="Розжигатор №1 в компактном наборе для поездки">'; })();
 

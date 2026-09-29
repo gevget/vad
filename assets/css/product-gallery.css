@@ -4,11 +4,11 @@
 }
 
 .product-gallery--fire .product-gallery__track li {
-  flex: 0 0 max(230px, calc(25% - 15px));
+  flex: 0 0 max(120px, calc(20% - 16px));
 }
 
 .product-gallery--paste .product-gallery__track li {
-  flex: 0 0 max(175px, calc(16.6667% - 16.667px));
+  flex: 0 0 max(120px, calc(16.6667% - 16.667px));
 }
 
 .product-gallery__track {
@@ -16,7 +16,7 @@
   align-items: flex-start;
   gap: 20px;
   width: 100%;
-  max-width: 1440px;
+  max-width: none;
   margin: 0 auto;
   padding: 8px clamp(20px, calc((100vw - 1320px) / 2), 60px);
   overflow-x: auto;
