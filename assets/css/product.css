@@ -69,3 +69,14 @@
 .video-guide{width:100%;margin:0;padding:0;background:transparent;overflow:hidden}.video-guide picture,.video-guide img{display:block;width:100%;max-width:100%;height:auto;margin:0}.video-guide img{object-fit:contain}
 
 .video-guide{box-sizing:border-box;width:100%;max-width:100vw;margin:0;overflow:hidden;line-height:0}.video-guide picture{display:block;width:100%;max-width:100%;margin:0;padding:0}.video-guide img{display:block;width:100%;max-width:100%;height:auto;margin:0;padding:0}
+.safety-media{align-self:start;height:auto;min-height:0}.safety-media img{height:auto;max-height:none;object-fit:contain}
+.conditions-media{grid-column:2;grid-row:1;position:static;align-self:center;width:100%;max-width:none;min-width:0;height:auto;min-height:0;margin:0;padding:0;overflow:hidden;border:2px dashed var(--yellow);box-sizing:border-box;background:transparent}
+.conditions-media img{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain}
+@media(max-width:850px){.conditions>.conditions-media{grid-column:auto;grid-row:auto;width:100%;max-width:100%;height:auto;min-height:0;margin:1.5rem 0;overflow:hidden}.conditions>.conditions-media img{width:100%;height:auto;max-height:none;object-fit:contain}}
+.difference>.difference-media{aspect-ratio:auto;height:auto;min-height:0;align-self:start;overflow:hidden}.difference>.difference-media img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+.safety>.safety-media{aspect-ratio:auto;align-self:start;height:auto;min-height:0;max-height:none;overflow:hidden}.safety>.safety-media img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+.conditions>.conditions-media{aspect-ratio:auto;justify-self:start;width:min(100%,440px);max-width:440px;height:auto;min-height:0;align-self:center;overflow:hidden}.conditions>.conditions-media img{display:block;width:100%;height:auto;object-fit:contain}
+.difference>.button,.compare>.button,.conditions>div>.button{display:inline-flex;align-items:center;justify-self:start;width:max-content;max-width:100%;margin-left:0}
+.difference>.button{grid-column:1;grid-row:4;margin-top:1.5rem}.compare>.button{grid-column:1/-1;justify-self:start;margin-top:2rem}.conditions>div>.button{margin-top:1.5rem}
+@media(max-width:850px){.conditions>.conditions-media{grid-column:auto;grid-row:auto;justify-self:center;width:min(100%,440px);max-width:440px;margin:1.5rem auto}.difference>.button,.compare>.button{grid-column:auto;grid-row:auto;margin-top:2rem}}
+.storage>div>.button{display:inline-flex;align-items:center;width:max-content;max-width:100%;margin:1.25rem 0 0}
