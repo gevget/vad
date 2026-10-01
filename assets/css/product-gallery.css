@@ -116,6 +116,22 @@
   }
 }
 
+@media (max-width: 767px) {
+  .product-gallery--fire .product-gallery__track {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .product-gallery--fire .product-gallery__track li {
+    flex: none;
+    width: min(100%, 420px);
+    margin-inline: auto;
+  }
+}
+
 /* На Full HD все фото Розжигатора помещаются в один ряд без прокрутки. */
 @media (min-width: 1920px) {
   .product-gallery--fire .product-gallery__track {
@@ -144,19 +160,20 @@
   }
 }
 
-/* На ноутбучной ширине карточки идут вертикально, чтобы оставаться читаемыми. */
+/* На ноутбуках все четыре квадратные карточки остаются в одной строке. */
 @media (min-width: 768px) and (max-width: 1919px) {
   .product-gallery--fire .product-gallery__track {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    justify-items: center;
-    gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
     padding-inline: 24px;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .product-gallery--fire .product-gallery__track li {
-    width: min(100%, 520px);
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .product-gallery--fire .product-gallery__item img {
