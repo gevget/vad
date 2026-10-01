@@ -116,6 +116,56 @@
   }
 }
 
+/* На Full HD все фото Розжигатора помещаются в один ряд без прокрутки. */
+@media (min-width: 1920px) {
+  .product-gallery--fire .product-gallery__track {
+    gap: 20px;
+    padding-inline: clamp(20px, calc((100vw - 1800px) / 2), 60px);
+    overflow-x: hidden;
+  }
+
+  .product-gallery--fire .product-gallery__track li {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .product-gallery--fire .product-gallery__item {
+    display: grid;
+    min-height: 48vh;
+    place-items: center;
+  }
+
+  .product-gallery--fire .product-gallery__item img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 48vh;
+    object-fit: contain;
+  }
+}
+
+/* На ноутбучной ширине карточки идут вертикально, чтобы оставаться читаемыми. */
+@media (min-width: 768px) and (max-width: 1919px) {
+  .product-gallery--fire .product-gallery__track {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 24px;
+    padding-inline: 24px;
+    overflow: visible;
+  }
+
+  .product-gallery--fire .product-gallery__track li {
+    width: min(100%, 520px);
+  }
+
+  .product-gallery--fire .product-gallery__item img {
+    height: auto;
+    max-height: none;
+    object-fit: initial;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .product-gallery__item {
     transition: none;
